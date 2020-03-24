@@ -41,7 +41,7 @@ def insert_daily_data_into_db(data_vendor_id,symbol_id,daily_data):
     with connection.cursor() as cursor:
         # Create a new record
         cursor.executemany(final_str,data)
-
+g
     # connection is not autocommit by default. So you must commit to save
     # your changes.
     connection.commit()
